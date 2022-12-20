@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PraktikaDataSet8" targetNamespace="http://tempuri.org/PraktikaDataSet8.xsd" xmlns:mstns="http://tempuri.org/PraktikaDataSet8.xsd" xmlns="http://tempuri.org/PraktikaDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PraktikaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PraktikaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Praktika.Properties.Settings.GlobalReference.Default.PraktikaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MP2TableAdapter" GeneratorDataComponentClassName="MP2TableAdapter" Name="MP2" UserDataComponentName="MP2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PraktikaConnectionString (Settings)" DbObjectName="Praktika.dbo.MP2" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Наименование, Цена, На_Складе, Зарезервированно, Да_Нет, Количество FROM dbo.MP2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Наименование" DataSetColumn="Наименование" />
+              <Mapping SourceColumn="Цена" DataSetColumn="Цена" />
+              <Mapping SourceColumn="На_Складе" DataSetColumn="На_Складе" />
+              <Mapping SourceColumn="Зарезервированно" DataSetColumn="Зарезервированно" />
+              <Mapping SourceColumn="Да_Нет" DataSetColumn="Да_Нет" />
+              <Mapping SourceColumn="Количество" DataSetColumn="Количество" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PraktikaDataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PraktikaDataSet8" msprop:Generator_UserDSName="PraktikaDataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MP2" msprop:Generator_TableClassName="MP2DataTable" msprop:Generator_TableVarName="tableMP2" msprop:Generator_TablePropName="MP2" msprop:Generator_RowDeletingName="MP2RowDeleting" msprop:Generator_RowChangingName="MP2RowChanging" msprop:Generator_RowEvHandlerName="MP2RowChangeEventHandler" msprop:Generator_RowDeletedName="MP2RowDeleted" msprop:Generator_UserTableName="MP2" msprop:Generator_RowChangedName="MP2RowChanged" msprop:Generator_RowEvArgName="MP2RowChangeEvent" msprop:Generator_RowClassName="MP2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Наименование" msprop:Generator_ColumnVarNameInTable="columnНаименование" msprop:Generator_ColumnPropNameInRow="Наименование" msprop:Generator_ColumnPropNameInTable="НаименованиеColumn" msprop:Generator_UserColumnName="Наименование" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Цена" msprop:Generator_ColumnVarNameInTable="columnЦена" msprop:Generator_ColumnPropNameInRow="Цена" msprop:Generator_ColumnPropNameInTable="ЦенаColumn" msprop:Generator_UserColumnName="Цена" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="На_Складе" msprop:Generator_ColumnVarNameInTable="columnНа_Складе" msprop:Generator_ColumnPropNameInRow="На_Складе" msprop:Generator_ColumnPropNameInTable="На_СкладеColumn" msprop:Generator_UserColumnName="На_Складе" type="xs:int" minOccurs="0" />
+              <xs:element name="Зарезервированно" msprop:Generator_ColumnVarNameInTable="columnЗарезервированно" msprop:Generator_ColumnPropNameInRow="Зарезервированно" msprop:Generator_ColumnPropNameInTable="ЗарезервированноColumn" msprop:Generator_UserColumnName="Зарезервированно" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Да_Нет" msprop:Generator_ColumnVarNameInTable="columnДа_Нет" msprop:Generator_ColumnPropNameInRow="Да_Нет" msprop:Generator_ColumnPropNameInTable="Да_НетColumn" msprop:Generator_UserColumnName="Да_Нет" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Количество" msprop:Generator_ColumnVarNameInTable="columnКоличество" msprop:Generator_ColumnPropNameInRow="Количество" msprop:Generator_ColumnPropNameInTable="КоличествоColumn" msprop:Generator_UserColumnName="Количество" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
