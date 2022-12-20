@@ -45,12 +45,17 @@ namespace Praktika
             this.praktikaDataSet23 = new Praktika.PraktikaDataSet23();
             this.logPassBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.logPassTableAdapter2 = new Praktika.PraktikaDataSet23TableAdapters.LogPassTableAdapter();
+            this.praktikaDataSet26 = new Praktika.PraktikaDataSet26();
+            this.logPassBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.logPassTableAdapter3 = new Praktika.PraktikaDataSet26TableAdapters.LogPassTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +78,7 @@ namespace Praktika
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.logPassBindingSource2;
+            this.comboBox1.DataSource = this.logPassBindingSource3;
             this.comboBox1.DisplayMember = "Login";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(145, 32);
@@ -150,6 +155,20 @@ namespace Praktika
             // 
             this.logPassTableAdapter2.ClearBeforeFill = true;
             // 
+            // praktikaDataSet26
+            // 
+            this.praktikaDataSet26.DataSetName = "PraktikaDataSet26";
+            this.praktikaDataSet26.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // logPassBindingSource3
+            // 
+            this.logPassBindingSource3.DataMember = "LogPass";
+            this.logPassBindingSource3.DataSource = this.praktikaDataSet26;
+            // 
+            // logPassTableAdapter3
+            // 
+            this.logPassTableAdapter3.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,6 +189,8 @@ namespace Praktika
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,6 +213,9 @@ namespace Praktika
         private PraktikaDataSet23 praktikaDataSet23;
         private System.Windows.Forms.BindingSource logPassBindingSource2;
         private PraktikaDataSet23TableAdapters.LogPassTableAdapter logPassTableAdapter2;
+        private PraktikaDataSet26 praktikaDataSet26;
+        private System.Windows.Forms.BindingSource logPassBindingSource3;
+        private PraktikaDataSet26TableAdapters.LogPassTableAdapter logPassTableAdapter3;
     }
 }
 

@@ -31,6 +31,8 @@ namespace Praktika
         {
             this.components = new System.ComponentModel.Container();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.addComboboxBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.praktikaDataSet22 = new Praktika.PraktikaDataSet22();
             this.mP3BindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.praktikaDataSet21 = new Praktika.PraktikaDataSet21();
             this.mP3BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -81,9 +83,15 @@ namespace Praktika
             this.mP3TableAdapter1 = new Praktika.PraktikaDataSet16TableAdapters.MP3TableAdapter();
             this.mP3TableAdapter2 = new Praktika.PraktikaDataSet20TableAdapters.MP3TableAdapter();
             this.mP3TableAdapter3 = new Praktika.PraktikaDataSet21TableAdapters.MP3TableAdapter();
-            this.praktikaDataSet22 = new Praktika.PraktikaDataSet22();
-            this.addComboboxBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.add_ComboboxTableAdapter = new Praktika.PraktikaDataSet22TableAdapters.Add_ComboboxTableAdapter();
+            this.praktikaDataSet24 = new Praktika.PraktikaDataSet24();
+            this.mP3BindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.mP3TableAdapter4 = new Praktika.PraktikaDataSet24TableAdapters.MP3TableAdapter();
+            this.praktikaDataSet25 = new Praktika.PraktikaDataSet25();
+            this.mP3BindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.mP3TableAdapter5 = new Praktika.PraktikaDataSet25TableAdapters.MP3TableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.addComboboxBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mP3BindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mP3BindingSource2)).BeginInit();
@@ -107,19 +115,31 @@ namespace Praktika
             ((System.ComponentModel.ISupportInitialize)(this.mPBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mP2BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.addComboboxBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mP3BindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mP3BindingSource5)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.addComboboxBindingSource;
+            this.comboBox1.DataSource = this.mP3BindingSource4;
             this.comboBox1.DisplayMember = "Категория";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(12, 15);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
+            // 
+            // addComboboxBindingSource
+            // 
+            this.addComboboxBindingSource.DataMember = "Add_Combobox";
+            this.addComboboxBindingSource.DataSource = this.praktikaDataSet22;
+            // 
+            // praktikaDataSet22
+            // 
+            this.praktikaDataSet22.DataSetName = "PraktikaDataSet22";
+            this.praktikaDataSet22.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // mP3BindingSource3
             // 
@@ -251,7 +271,7 @@ namespace Praktika
             this.зарезервированноDataGridViewTextBoxColumn,
             this.даНетDataGridViewCheckBoxColumn,
             this.количествоDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.mP3BindingSource1;
+            this.dataGridView1.DataSource = this.mP3BindingSource5;
             this.dataGridView1.Location = new System.Drawing.Point(12, 44);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(656, 223);
@@ -429,19 +449,37 @@ namespace Praktika
             // 
             this.mP3TableAdapter3.ClearBeforeFill = true;
             // 
-            // praktikaDataSet22
-            // 
-            this.praktikaDataSet22.DataSetName = "PraktikaDataSet22";
-            this.praktikaDataSet22.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // addComboboxBindingSource
-            // 
-            this.addComboboxBindingSource.DataMember = "Add_Combobox";
-            this.addComboboxBindingSource.DataSource = this.praktikaDataSet22;
-            // 
             // add_ComboboxTableAdapter
             // 
             this.add_ComboboxTableAdapter.ClearBeforeFill = true;
+            // 
+            // praktikaDataSet24
+            // 
+            this.praktikaDataSet24.DataSetName = "PraktikaDataSet24";
+            this.praktikaDataSet24.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mP3BindingSource4
+            // 
+            this.mP3BindingSource4.DataMember = "MP3";
+            this.mP3BindingSource4.DataSource = this.praktikaDataSet24;
+            // 
+            // mP3TableAdapter4
+            // 
+            this.mP3TableAdapter4.ClearBeforeFill = true;
+            // 
+            // praktikaDataSet25
+            // 
+            this.praktikaDataSet25.DataSetName = "PraktikaDataSet25";
+            this.praktikaDataSet25.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mP3BindingSource5
+            // 
+            this.mP3BindingSource5.DataMember = "MP3";
+            this.mP3BindingSource5.DataSource = this.praktikaDataSet25;
+            // 
+            // mP3TableAdapter5
+            // 
+            this.mP3TableAdapter5.ClearBeforeFill = true;
             // 
             // Form3
             // 
@@ -463,6 +501,8 @@ namespace Praktika
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.addComboboxBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mP3BindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mP3BindingSource2)).EndInit();
@@ -486,8 +526,10 @@ namespace Praktika
             ((System.ComponentModel.ISupportInitialize)(this.mPBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mP2BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.addComboboxBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mP3BindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mP3BindingSource5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -549,5 +591,11 @@ namespace Praktika
         private PraktikaDataSet22 praktikaDataSet22;
         private System.Windows.Forms.BindingSource addComboboxBindingSource;
         private PraktikaDataSet22TableAdapters.Add_ComboboxTableAdapter add_ComboboxTableAdapter;
+        private PraktikaDataSet24 praktikaDataSet24;
+        private System.Windows.Forms.BindingSource mP3BindingSource4;
+        private PraktikaDataSet24TableAdapters.MP3TableAdapter mP3TableAdapter4;
+        private PraktikaDataSet25 praktikaDataSet25;
+        private System.Windows.Forms.BindingSource mP3BindingSource5;
+        private PraktikaDataSet25TableAdapters.MP3TableAdapter mP3TableAdapter5;
     }
 }

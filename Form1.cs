@@ -14,7 +14,7 @@ namespace Praktika
 {
     public partial class Form1 : Form
     {
-        string conStr = @"Data Source=25.74.126.109;Initial Catalog=Praktika;User ID = sa; Password = sa";
+        string conStr = @"Data Source=26.116.96.59;Initial Catalog=Praktika;User ID = sa; Password = sa";
         Form2 frm2;
         Form3 frm3;
         Form4 frm4;
@@ -28,8 +28,8 @@ namespace Praktika
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet23.LogPass". При необходимости она может быть перемещена или удалена.
-            this.logPassTableAdapter2.Fill(this.praktikaDataSet23.LogPass);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet26.LogPass". При необходимости она может быть перемещена или удалена.
+            this.logPassTableAdapter3.Fill(this.praktikaDataSet26.LogPass);
             this.button1.Text = "Вход";
             this.button2.Text = "Выход";
             base.Text = "Авторизация";

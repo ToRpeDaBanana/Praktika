@@ -22,7 +22,7 @@ namespace Praktika
         DataTable bd = new DataTable();
         BindingSource bds;
         Form1 parent;
-        string conStr = @"Data Source=25.74.126.109;Initial Catalog=Praktika;User ID = sa; Password = sa";
+        string conStr = @"Data Source=26.116.96.59;Initial Catalog=Praktika;User ID = sa; Password = sa";
         public void selectКлиент()
         {
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
@@ -61,10 +61,11 @@ namespace Praktika
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet22.Add_Combobox". При необходимости она может быть перемещена или удалена.
-            this.add_ComboboxTableAdapter.Fill(this.praktikaDataSet22.Add_Combobox);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet21.MP3". При необходимости она может быть перемещена или удалена.
-            this.mP3TableAdapter3.Fill(this.praktikaDataSet21.MP3);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet25.MP3". При необходимости она может быть перемещена или удалена.
+            this.mP3TableAdapter5.Fill(this.praktikaDataSet25.MP3);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet24.MP3". При необходимости она может быть перемещена или удалена.
+            this.mP3TableAdapter4.Fill(this.praktikaDataSet24.MP3);
+
 
 
             base.Text = "Форма МП";
