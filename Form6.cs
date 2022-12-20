@@ -23,10 +23,9 @@ namespace Praktika
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet19.MP3". При необходимости она может быть перемещена или удалена.
-            this.mP3TableAdapter1.Fill(this.praktikaDataSet19.MP3);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet11.MP3". При необходимости она может быть перемещена или удалена.
-            this.mP3TableAdapter.Fill(this.praktikaDataSet11.MP3);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet27.MP3". При необходимости она может быть перемещена или удалена.
+            this.mP3TableAdapter2.Fill(this.praktikaDataSet27.MP3);
+
 
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.ControlBox = false;

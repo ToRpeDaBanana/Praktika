@@ -35,18 +35,23 @@ namespace Praktika
             this.владелецDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.коментарийDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ticketsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.praktikaDataSet18 = new Praktika.PraktikaDataSet18();
             this.ticketsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ticketsGG = new Praktika.TicketsGG();
             this.ticketsTableAdapter = new Praktika.TicketsGGTableAdapters.TicketsTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
-            this.praktikaDataSet18 = new Praktika.PraktikaDataSet18();
-            this.ticketsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ticketsTableAdapter1 = new Praktika.PraktikaDataSet18TableAdapters.TicketsTableAdapter();
+            this.praktikaDataSet28 = new Praktika.PraktikaDataSet28();
+            this.ticketsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.ticketsTableAdapter2 = new Praktika.PraktikaDataSet28TableAdapters.TicketsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ticketsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ticketsGG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketsBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -58,7 +63,7 @@ namespace Praktika
             this.владелецDataGridViewTextBoxColumn,
             this.коментарийDataGridViewTextBoxColumn,
             this.датаDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.ticketsBindingSource1;
+            this.dataGridView1.DataSource = this.ticketsBindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(483, 171);
@@ -89,6 +94,16 @@ namespace Praktika
             this.датаDataGridViewTextBoxColumn.HeaderText = "Дата";
             this.датаDataGridViewTextBoxColumn.Name = "датаDataGridViewTextBoxColumn";
             // 
+            // ticketsBindingSource1
+            // 
+            this.ticketsBindingSource1.DataMember = "Tickets";
+            this.ticketsBindingSource1.DataSource = this.praktikaDataSet18;
+            // 
+            // praktikaDataSet18
+            // 
+            this.praktikaDataSet18.DataSetName = "PraktikaDataSet18";
+            this.praktikaDataSet18.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // ticketsBindingSource
             // 
             this.ticketsBindingSource.DataMember = "Tickets";
@@ -113,19 +128,23 @@ namespace Praktika
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // praktikaDataSet18
-            // 
-            this.praktikaDataSet18.DataSetName = "PraktikaDataSet18";
-            this.praktikaDataSet18.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ticketsBindingSource1
-            // 
-            this.ticketsBindingSource1.DataMember = "Tickets";
-            this.ticketsBindingSource1.DataSource = this.praktikaDataSet18;
-            // 
             // ticketsTableAdapter1
             // 
             this.ticketsTableAdapter1.ClearBeforeFill = true;
+            // 
+            // praktikaDataSet28
+            // 
+            this.praktikaDataSet28.DataSetName = "PraktikaDataSet28";
+            this.praktikaDataSet28.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ticketsBindingSource2
+            // 
+            this.ticketsBindingSource2.DataMember = "Tickets";
+            this.ticketsBindingSource2.DataSource = this.praktikaDataSet28;
+            // 
+            // ticketsTableAdapter2
+            // 
+            this.ticketsTableAdapter2.ClearBeforeFill = true;
             // 
             // Form2
             // 
@@ -138,10 +157,12 @@ namespace Praktika
             this.Text = "s";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ticketsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ticketsGG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketsBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -160,5 +181,8 @@ namespace Praktika
         private PraktikaDataSet18 praktikaDataSet18;
         private System.Windows.Forms.BindingSource ticketsBindingSource1;
         private PraktikaDataSet18TableAdapters.TicketsTableAdapter ticketsTableAdapter1;
+        private PraktikaDataSet28 praktikaDataSet28;
+        private System.Windows.Forms.BindingSource ticketsBindingSource2;
+        private PraktikaDataSet28TableAdapters.TicketsTableAdapter ticketsTableAdapter2;
     }
 }

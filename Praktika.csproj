@@ -189,6 +189,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PraktikaDataSet26.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PraktikaDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktikaDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktikaDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktikaDataSet28.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PraktikaDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -478,6 +488,28 @@
     </None>
     <None Include="PraktikaDataSet26.xss">
       <DependentUpon>PraktikaDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="PraktikaDataSet27.xsc">
+      <DependentUpon>PraktikaDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="PraktikaDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktikaDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PraktikaDataSet27.xss">
+      <DependentUpon>PraktikaDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="PraktikaDataSet28.xsc">
+      <DependentUpon>PraktikaDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="PraktikaDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktikaDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PraktikaDataSet28.xss">
+      <DependentUpon>PraktikaDataSet28.xsd</DependentUpon>
     </None>
     <None Include="PraktikaDataSet3.xsc">
       <DependentUpon>PraktikaDataSet3.xsd</DependentUpon>

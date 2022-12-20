@@ -19,7 +19,7 @@ namespace Praktika
         BindingSource bds;
         Form3 parent;
         SqlDataAdapter adapter = null;
-        string conStr = @"Data Source=25.74.126.109;Initial Catalog=Praktika;User ID = sa; Password = sa";
+        string conStr = @"Data Source=26.116.96.59;Initial Catalog=Praktika;User ID = sa; Password = sa";
         public Form5()
         {
             InitializeComponent();
@@ -68,8 +68,6 @@ namespace Praktika
             }
             Random r = new Random();
             string val = r.Next(1, 90000).ToString("00000");
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet10.LogPass". При необходимости она может быть перемещена или удалена.
-            this.logPassTableAdapter.Fill(this.praktikaDataSet10.LogPass);
             base.Text = "Счёт-фактуры";
             label1.Text = "Счёт-фактуры";
             label3.Text = $"№{val}";
