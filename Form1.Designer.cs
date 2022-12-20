@@ -34,25 +34,16 @@ namespace Praktika
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.logPassBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.praktikaDataSet17 = new Praktika.PraktikaDataSet17();
             this.logPassBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.praktikaDataSet = new Praktika.PraktikaDataSet();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.logPassTableAdapter = new Praktika.PraktikaDataSetTableAdapters.LogPassTableAdapter();
-            this.logPassTableAdapter1 = new Praktika.PraktikaDataSet17TableAdapters.LogPassTableAdapter();
-            this.praktikaDataSet23 = new Praktika.PraktikaDataSet23();
             this.logPassBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.logPassTableAdapter2 = new Praktika.PraktikaDataSet23TableAdapters.LogPassTableAdapter();
             this.praktikaDataSet26 = new Praktika.PraktikaDataSet26();
             this.logPassBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.logPassTableAdapter3 = new Praktika.PraktikaDataSet26TableAdapters.LogPassTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource3)).BeginInit();
@@ -89,22 +80,12 @@ namespace Praktika
             // logPassBindingSource1
             // 
             this.logPassBindingSource1.DataMember = "LogPass";
-            this.logPassBindingSource1.DataSource = this.praktikaDataSet17;
-            // 
-            // praktikaDataSet17
-            // 
-            this.praktikaDataSet17.DataSetName = "PraktikaDataSet17";
-            this.praktikaDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+
             // 
             // logPassBindingSource
             // 
             this.logPassBindingSource.DataMember = "LogPass";
-            this.logPassBindingSource.DataSource = this.praktikaDataSet;
-            // 
-            // praktikaDataSet
-            // 
-            this.praktikaDataSet.DataSetName = "PraktikaDataSet";
-            this.praktikaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+
             // 
             // textBox1
             // 
@@ -135,25 +116,18 @@ namespace Praktika
             // 
             // logPassTableAdapter
             // 
-            this.logPassTableAdapter.ClearBeforeFill = true;
-            // 
-            // logPassTableAdapter1
-            // 
-            this.logPassTableAdapter1.ClearBeforeFill = true;
+
             // 
             // praktikaDataSet23
             // 
-            this.praktikaDataSet23.DataSetName = "PraktikaDataSet23";
-            this.praktikaDataSet23.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+
             // 
             // logPassBindingSource2
             // 
             this.logPassBindingSource2.DataMember = "LogPass";
-            this.logPassBindingSource2.DataSource = this.praktikaDataSet23;
             // 
             // logPassTableAdapter2
             // 
-            this.logPassTableAdapter2.ClearBeforeFill = true;
             // 
             // praktikaDataSet26
             // 
@@ -184,10 +158,7 @@ namespace Praktika
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource3)).EndInit();
@@ -204,15 +175,13 @@ namespace Praktika
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private PraktikaDataSet praktikaDataSet;
+       
         private System.Windows.Forms.BindingSource logPassBindingSource;
-        private PraktikaDataSetTableAdapters.LogPassTableAdapter logPassTableAdapter;
-        private PraktikaDataSet17 praktikaDataSet17;
+        
         private System.Windows.Forms.BindingSource logPassBindingSource1;
-        private PraktikaDataSet17TableAdapters.LogPassTableAdapter logPassTableAdapter1;
-        private PraktikaDataSet23 praktikaDataSet23;
+        
         private System.Windows.Forms.BindingSource logPassBindingSource2;
-        private PraktikaDataSet23TableAdapters.LogPassTableAdapter logPassTableAdapter2;
+        
         private PraktikaDataSet26 praktikaDataSet26;
         private System.Windows.Forms.BindingSource logPassBindingSource3;
         private PraktikaDataSet26TableAdapters.LogPassTableAdapter logPassTableAdapter3;

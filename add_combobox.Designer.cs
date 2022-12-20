@@ -20,17 +20,17 @@ namespace Praktika {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("PraktikaDataSet10")]
+    [global::System.Xml.Serialization.XmlRootAttribute("add_combobox")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class PraktikaDataSet10 : global::System.Data.DataSet {
+    public partial class add_combobox : global::System.Data.DataSet {
         
-        private LogPassDataTable tableLogPass;
+        private Add_ComboboxDataTable tableAdd_Combobox;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public PraktikaDataSet10() {
+        public add_combobox() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Praktika {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected PraktikaDataSet10(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected add_combobox(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Praktika {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["LogPass"] != null)) {
-                    base.Tables.Add(new LogPassDataTable(ds.Tables["LogPass"]));
+                if ((ds.Tables["Add_Combobox"] != null)) {
+                    base.Tables.Add(new Add_ComboboxDataTable(ds.Tables["Add_Combobox"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Praktika {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public LogPassDataTable LogPass {
+        public Add_ComboboxDataTable Add_Combobox {
             get {
-                return this.tableLogPass;
+                return this.tableAdd_Combobox;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Praktika {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            PraktikaDataSet10 cln = ((PraktikaDataSet10)(base.Clone()));
+            add_combobox cln = ((add_combobox)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Praktika {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["LogPass"] != null)) {
-                    base.Tables.Add(new LogPassDataTable(ds.Tables["LogPass"]));
+                if ((ds.Tables["Add_Combobox"] != null)) {
+                    base.Tables.Add(new Add_ComboboxDataTable(ds.Tables["Add_Combobox"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Praktika {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableLogPass = ((LogPassDataTable)(base.Tables["LogPass"]));
+            this.tableAdd_Combobox = ((Add_ComboboxDataTable)(base.Tables["Add_Combobox"]));
             if ((initTable == true)) {
-                if ((this.tableLogPass != null)) {
-                    this.tableLogPass.InitVars();
+                if ((this.tableAdd_Combobox != null)) {
+                    this.tableAdd_Combobox.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Praktika {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "PraktikaDataSet10";
+            this.DataSetName = "add_combobox";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/PraktikaDataSet10.xsd";
+            this.Namespace = "http://tempuri.org/add_combobox.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableLogPass = new LogPassDataTable();
-            base.Tables.Add(this.tableLogPass);
+            this.tableAdd_Combobox = new Add_ComboboxDataTable();
+            base.Tables.Add(this.tableAdd_Combobox);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeLogPass() {
+        private bool ShouldSerializeAdd_Combobox() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Praktika {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            PraktikaDataSet10 ds = new PraktikaDataSet10();
+            add_combobox ds = new add_combobox();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,21 +270,21 @@ namespace Praktika {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void LogPassRowChangeEventHandler(object sender, LogPassRowChangeEvent e);
+        public delegate void Add_ComboboxRowChangeEventHandler(object sender, Add_ComboboxRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class LogPassDataTable : global::System.Data.TypedTableBase<LogPassRow> {
+        public partial class Add_ComboboxDataTable : global::System.Data.TypedTableBase<Add_ComboboxRow> {
             
-            private global::System.Data.DataColumn columnLogin;
+            private global::System.Data.DataColumn columnКатегория;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public LogPassDataTable() {
-                this.TableName = "LogPass";
+            public Add_ComboboxDataTable() {
+                this.TableName = "Add_Combobox";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -292,7 +292,7 @@ namespace Praktika {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal LogPassDataTable(global::System.Data.DataTable table) {
+            internal Add_ComboboxDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -309,16 +309,16 @@ namespace Praktika {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected LogPassDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Add_ComboboxDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn LoginColumn {
+            public global::System.Data.DataColumn КатегорияColumn {
                 get {
-                    return this.columnLogin;
+                    return this.columnКатегория;
                 }
             }
             
@@ -333,45 +333,45 @@ namespace Praktika {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public LogPassRow this[int index] {
+            public Add_ComboboxRow this[int index] {
                 get {
-                    return ((LogPassRow)(this.Rows[index]));
+                    return ((Add_ComboboxRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event LogPassRowChangeEventHandler LogPassRowChanging;
+            public event Add_ComboboxRowChangeEventHandler Add_ComboboxRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event LogPassRowChangeEventHandler LogPassRowChanged;
+            public event Add_ComboboxRowChangeEventHandler Add_ComboboxRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event LogPassRowChangeEventHandler LogPassRowDeleting;
+            public event Add_ComboboxRowChangeEventHandler Add_ComboboxRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event LogPassRowChangeEventHandler LogPassRowDeleted;
+            public event Add_ComboboxRowChangeEventHandler Add_ComboboxRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddLogPassRow(LogPassRow row) {
+            public void AddAdd_ComboboxRow(Add_ComboboxRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public LogPassRow AddLogPassRow(string Login) {
-                LogPassRow rowLogPassRow = ((LogPassRow)(this.NewRow()));
+            public Add_ComboboxRow AddAdd_ComboboxRow(string Категория) {
+                Add_ComboboxRow rowAdd_ComboboxRow = ((Add_ComboboxRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Login};
-                rowLogPassRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowLogPassRow);
-                return rowLogPassRow;
+                        Категория};
+                rowAdd_ComboboxRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAdd_ComboboxRow);
+                return rowAdd_ComboboxRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                LogPassDataTable cln = ((LogPassDataTable)(base.Clone()));
+                Add_ComboboxDataTable cln = ((Add_ComboboxDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -379,47 +379,47 @@ namespace Praktika {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new LogPassDataTable();
+                return new Add_ComboboxDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnLogin = base.Columns["Login"];
+                this.columnКатегория = base.Columns["Категория"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnLogin = new global::System.Data.DataColumn("Login", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLogin);
-                this.columnLogin.MaxLength = 50;
+                this.columnКатегория = new global::System.Data.DataColumn("Категория", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnКатегория);
+                this.columnКатегория.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public LogPassRow NewLogPassRow() {
-                return ((LogPassRow)(this.NewRow()));
+            public Add_ComboboxRow NewAdd_ComboboxRow() {
+                return ((Add_ComboboxRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new LogPassRow(builder);
+                return new Add_ComboboxRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(LogPassRow);
+                return typeof(Add_ComboboxRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.LogPassRowChanged != null)) {
-                    this.LogPassRowChanged(this, new LogPassRowChangeEvent(((LogPassRow)(e.Row)), e.Action));
+                if ((this.Add_ComboboxRowChanged != null)) {
+                    this.Add_ComboboxRowChanged(this, new Add_ComboboxRowChangeEvent(((Add_ComboboxRow)(e.Row)), e.Action));
                 }
             }
             
@@ -427,8 +427,8 @@ namespace Praktika {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.LogPassRowChanging != null)) {
-                    this.LogPassRowChanging(this, new LogPassRowChangeEvent(((LogPassRow)(e.Row)), e.Action));
+                if ((this.Add_ComboboxRowChanging != null)) {
+                    this.Add_ComboboxRowChanging(this, new Add_ComboboxRowChangeEvent(((Add_ComboboxRow)(e.Row)), e.Action));
                 }
             }
             
@@ -436,8 +436,8 @@ namespace Praktika {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.LogPassRowDeleted != null)) {
-                    this.LogPassRowDeleted(this, new LogPassRowChangeEvent(((LogPassRow)(e.Row)), e.Action));
+                if ((this.Add_ComboboxRowDeleted != null)) {
+                    this.Add_ComboboxRowDeleted(this, new Add_ComboboxRowChangeEvent(((Add_ComboboxRow)(e.Row)), e.Action));
                 }
             }
             
@@ -445,14 +445,14 @@ namespace Praktika {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.LogPassRowDeleting != null)) {
-                    this.LogPassRowDeleting(this, new LogPassRowChangeEvent(((LogPassRow)(e.Row)), e.Action));
+                if ((this.Add_ComboboxRowDeleting != null)) {
+                    this.Add_ComboboxRowDeleting(this, new Add_ComboboxRowChangeEvent(((Add_ComboboxRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveLogPassRow(LogPassRow row) {
+            public void RemoveAdd_ComboboxRow(Add_ComboboxRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -461,7 +461,7 @@ namespace Praktika {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PraktikaDataSet10 ds = new PraktikaDataSet10();
+                add_combobox ds = new add_combobox();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -479,7 +479,7 @@ namespace Praktika {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "LogPassDataTable";
+                attribute2.FixedValue = "Add_ComboboxDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -523,43 +523,43 @@ namespace Praktika {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class LogPassRow : global::System.Data.DataRow {
+        public partial class Add_ComboboxRow : global::System.Data.DataRow {
             
-            private LogPassDataTable tableLogPass;
+            private Add_ComboboxDataTable tableAdd_Combobox;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal LogPassRow(global::System.Data.DataRowBuilder rb) : 
+            internal Add_ComboboxRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableLogPass = ((LogPassDataTable)(this.Table));
+                this.tableAdd_Combobox = ((Add_ComboboxDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Login {
+            public string Категория {
                 get {
                     try {
-                        return ((string)(this[this.tableLogPass.LoginColumn]));
+                        return ((string)(this[this.tableAdd_Combobox.КатегорияColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Login\' в таблице \'LogPass\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Категория\' в таблице \'Add_Combobox\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableLogPass.LoginColumn] = value;
+                    this[this.tableAdd_Combobox.КатегорияColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsLoginNull() {
-                return this.IsNull(this.tableLogPass.LoginColumn);
+            public bool IsКатегорияNull() {
+                return this.IsNull(this.tableAdd_Combobox.КатегорияColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetLoginNull() {
-                this[this.tableLogPass.LoginColumn] = global::System.Convert.DBNull;
+            public void SetКатегорияNull() {
+                this[this.tableAdd_Combobox.КатегорияColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -567,22 +567,22 @@ namespace Praktika {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class LogPassRowChangeEvent : global::System.EventArgs {
+        public class Add_ComboboxRowChangeEvent : global::System.EventArgs {
             
-            private LogPassRow eventRow;
+            private Add_ComboboxRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public LogPassRowChangeEvent(LogPassRow row, global::System.Data.DataRowAction action) {
+            public Add_ComboboxRowChangeEvent(Add_ComboboxRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public LogPassRow Row {
+            public Add_ComboboxRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -598,7 +598,7 @@ namespace Praktika {
         }
     }
 }
-namespace Praktika.PraktikaDataSet10TableAdapters {
+namespace Praktika.add_comboboxTableAdapters {
     
     
     /// <summary>
@@ -610,7 +610,7 @@ namespace Praktika.PraktikaDataSet10TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class LogPassTableAdapter : global::System.ComponentModel.Component {
+    public partial class Add_ComboboxTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -624,7 +624,7 @@ namespace Praktika.PraktikaDataSet10TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public LogPassTableAdapter() {
+        public Add_ComboboxTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -721,8 +721,8 @@ namespace Praktika.PraktikaDataSet10TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "LogPass";
-            tableMapping.ColumnMappings.Add("Login", "Login");
+            tableMapping.DataSetTable = "Add_Combobox";
+            tableMapping.ColumnMappings.Add("Категория", "Категория");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -730,7 +730,7 @@ namespace Praktika.PraktikaDataSet10TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Praktika.Properties.Settings.Default.PraktikaConnectionString;
+            this._connection.ConnectionString = global::Praktika.Properties.Settings.Default.PraktikaConnectionStringGG;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -739,15 +739,16 @@ namespace Praktika.PraktikaDataSet10TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Login FROM dbo.LogPass";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].CommandText = "dbo.Add_Combobox";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PraktikaDataSet10.LogPassDataTable dataTable) {
+        public virtual int Fill(add_combobox.Add_ComboboxDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -760,9 +761,9 @@ namespace Praktika.PraktikaDataSet10TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PraktikaDataSet10.LogPassDataTable GetData() {
+        public virtual add_combobox.Add_ComboboxDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PraktikaDataSet10.LogPassDataTable dataTable = new PraktikaDataSet10.LogPassDataTable();
+            add_combobox.Add_ComboboxDataTable dataTable = new add_combobox.Add_ComboboxDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -836,7 +837,7 @@ namespace Praktika.PraktikaDataSet10TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(PraktikaDataSet10 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(add_combobox dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -846,7 +847,7 @@ namespace Praktika.PraktikaDataSet10TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(PraktikaDataSet10 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(add_combobox dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -856,7 +857,7 @@ namespace Praktika.PraktikaDataSet10TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(PraktikaDataSet10 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(add_combobox dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -890,7 +891,7 @@ namespace Praktika.PraktikaDataSet10TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(PraktikaDataSet10 dataSet) {
+        public virtual int UpdateAll(add_combobox dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

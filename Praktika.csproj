@@ -53,6 +53,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addcombobox.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addcombobox.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="add_combobox.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>add_combobox.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="add_combobox2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>add_combobox2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,80 +114,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PraktikaDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="PraktikaDataSet10.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet10.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet11.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet11.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet12.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet12.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet13.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet13.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet14.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet14.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet15.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet15.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet16.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet16.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet17.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet17.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet18.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet18.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet19.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet19.xsd</DependentUpon>
-    </Compile>
     <Compile Include="PraktikaDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PraktikaDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet20.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet20.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet21.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet21.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet22.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet22.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet23.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet23.xsd</DependentUpon>
     </Compile>
     <Compile Include="PraktikaDataSet24.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -199,48 +144,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PraktikaDataSet28.xsd</DependentUpon>
     </Compile>
-    <Compile Include="PraktikaDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet6.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet7.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet8.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet8.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PraktikaDataSet9.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PraktikaDataSet9.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TicketsGG.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TicketsGG.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +173,39 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="addcombobox.xsc">
+      <DependentUpon>addcombobox.xsd</DependentUpon>
+    </None>
+    <None Include="addcombobox.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>addcombobox.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="addcombobox.xss">
+      <DependentUpon>addcombobox.xsd</DependentUpon>
+    </None>
+    <None Include="add_combobox.xsc">
+      <DependentUpon>add_combobox.xsd</DependentUpon>
+    </None>
+    <None Include="add_combobox.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>add_combobox.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="add_combobox.xss">
+      <DependentUpon>add_combobox.xsd</DependentUpon>
+    </None>
+    <None Include="add_combobox2.xsc">
+      <DependentUpon>add_combobox2.xsd</DependentUpon>
+    </None>
+    <None Include="add_combobox2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>add_combobox2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="add_combobox2.xss">
+      <DependentUpon>add_combobox2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="PraktikaDataSet.xsc">
       <DependentUpon>PraktikaDataSet.xsd</DependentUpon>
@@ -291,116 +229,6 @@
     <None Include="PraktikaDataSet1.xss">
       <DependentUpon>PraktikaDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="PraktikaDataSet10.xsc">
-      <DependentUpon>PraktikaDataSet10.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet10.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet10.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet10.xss">
-      <DependentUpon>PraktikaDataSet10.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet11.xsc">
-      <DependentUpon>PraktikaDataSet11.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet11.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet11.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet11.xss">
-      <DependentUpon>PraktikaDataSet11.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet12.xsc">
-      <DependentUpon>PraktikaDataSet12.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet12.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet12.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet12.xss">
-      <DependentUpon>PraktikaDataSet12.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet13.xsc">
-      <DependentUpon>PraktikaDataSet13.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet13.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet13.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet13.xss">
-      <DependentUpon>PraktikaDataSet13.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet14.xsc">
-      <DependentUpon>PraktikaDataSet14.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet14.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet14.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet14.xss">
-      <DependentUpon>PraktikaDataSet14.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet15.xsc">
-      <DependentUpon>PraktikaDataSet15.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet15.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet15.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet15.xss">
-      <DependentUpon>PraktikaDataSet15.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet16.xsc">
-      <DependentUpon>PraktikaDataSet16.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet16.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet16.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet16.xss">
-      <DependentUpon>PraktikaDataSet16.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet17.xsc">
-      <DependentUpon>PraktikaDataSet17.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet17.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet17.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet17.xss">
-      <DependentUpon>PraktikaDataSet17.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet18.xsc">
-      <DependentUpon>PraktikaDataSet18.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet18.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet18.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet18.xss">
-      <DependentUpon>PraktikaDataSet18.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet19.xsc">
-      <DependentUpon>PraktikaDataSet19.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet19.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet19.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet19.xss">
-      <DependentUpon>PraktikaDataSet19.xsd</DependentUpon>
-    </None>
     <None Include="PraktikaDataSet2.xsc">
       <DependentUpon>PraktikaDataSet2.xsd</DependentUpon>
     </None>
@@ -411,50 +239,6 @@
     </None>
     <None Include="PraktikaDataSet2.xss">
       <DependentUpon>PraktikaDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet20.xsc">
-      <DependentUpon>PraktikaDataSet20.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet20.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet20.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet20.xss">
-      <DependentUpon>PraktikaDataSet20.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet21.xsc">
-      <DependentUpon>PraktikaDataSet21.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet21.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet21.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet21.xss">
-      <DependentUpon>PraktikaDataSet21.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet22.xsc">
-      <DependentUpon>PraktikaDataSet22.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet22.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet22.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet22.xss">
-      <DependentUpon>PraktikaDataSet22.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet23.xsc">
-      <DependentUpon>PraktikaDataSet23.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet23.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet23.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet23.xss">
-      <DependentUpon>PraktikaDataSet23.xsd</DependentUpon>
     </None>
     <None Include="PraktikaDataSet24.xsc">
       <DependentUpon>PraktikaDataSet24.xsd</DependentUpon>
@@ -511,83 +295,6 @@
     <None Include="PraktikaDataSet28.xss">
       <DependentUpon>PraktikaDataSet28.xsd</DependentUpon>
     </None>
-    <None Include="PraktikaDataSet3.xsc">
-      <DependentUpon>PraktikaDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet3.xss">
-      <DependentUpon>PraktikaDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet4.xsc">
-      <DependentUpon>PraktikaDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet4.xss">
-      <DependentUpon>PraktikaDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet5.xsc">
-      <DependentUpon>PraktikaDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet5.xss">
-      <DependentUpon>PraktikaDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet6.xsc">
-      <DependentUpon>PraktikaDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet6.xss">
-      <DependentUpon>PraktikaDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet7.xsc">
-      <DependentUpon>PraktikaDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet7.xss">
-      <DependentUpon>PraktikaDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet8.xsc">
-      <DependentUpon>PraktikaDataSet8.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet8.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet8.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet8.xss">
-      <DependentUpon>PraktikaDataSet8.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet9.xsc">
-      <DependentUpon>PraktikaDataSet9.xsd</DependentUpon>
-    </None>
-    <None Include="PraktikaDataSet9.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PraktikaDataSet9.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PraktikaDataSet9.xss">
-      <DependentUpon>PraktikaDataSet9.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -597,17 +304,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TicketsGG.xsc">
-      <DependentUpon>TicketsGG.xsd</DependentUpon>
-    </None>
-    <None Include="TicketsGG.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TicketsGG.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="TicketsGG.xss">
-      <DependentUpon>TicketsGG.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

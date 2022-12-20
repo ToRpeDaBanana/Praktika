@@ -21,7 +21,16 @@
             <Mappings>
               <Mapping SourceColumn="Категория" DataSetColumn="Категория" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="PraktikaConnectionStringGG (Settings)" DbObjectName="Praktika.dbo.MP3" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Категория FROM dbo.MP3</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
@@ -31,7 +40,7 @@
   <xs:element name="PraktikaDataSet24" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PraktikaDataSet24" msprop:Generator_UserDSName="PraktikaDataSet24">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="MP3" msprop:Generator_TableClassName="MP3DataTable" msprop:Generator_TableVarName="tableMP3" msprop:Generator_TablePropName="MP3" msprop:Generator_RowDeletingName="MP3RowDeleting" msprop:Generator_RowChangingName="MP3RowChanging" msprop:Generator_RowEvHandlerName="MP3RowChangeEventHandler" msprop:Generator_RowDeletedName="MP3RowDeleted" msprop:Generator_UserTableName="MP3" msprop:Generator_RowChangedName="MP3RowChanged" msprop:Generator_RowEvArgName="MP3RowChangeEvent" msprop:Generator_RowClassName="MP3Row">
+        <xs:element name="MP3" msprop:Generator_TableClassName="MP3DataTable" msprop:Generator_TableVarName="tableMP3" msprop:Generator_RowChangedName="MP3RowChanged" msprop:Generator_TablePropName="MP3" msprop:Generator_RowDeletingName="MP3RowDeleting" msprop:Generator_RowChangingName="MP3RowChanging" msprop:Generator_RowEvHandlerName="MP3RowChangeEventHandler" msprop:Generator_RowDeletedName="MP3RowDeleted" msprop:Generator_RowClassName="MP3Row" msprop:Generator_UserTableName="MP3" msprop:Generator_RowEvArgName="MP3RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Категория" msprop:Generator_ColumnVarNameInTable="columnКатегория" msprop:Generator_ColumnPropNameInRow="Категория" msprop:Generator_ColumnPropNameInTable="КатегорияColumn" msprop:Generator_UserColumnName="Категория" minOccurs="0">

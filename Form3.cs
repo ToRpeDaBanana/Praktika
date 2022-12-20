@@ -61,6 +61,8 @@ namespace Praktika
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "addcombobox.Add_Combobox". При необходимости она может быть перемещена или удалена.
+            this.add_ComboboxTableAdapter1.Fill(this.addcombobox.Add_Combobox);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet25.MP3". При необходимости она может быть перемещена или удалена.
             this.mP3TableAdapter5.Fill(this.praktikaDataSet25.MP3);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet24.MP3". При необходимости она может быть перемещена или удалена.

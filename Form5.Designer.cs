@@ -48,8 +48,6 @@ namespace Praktika
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.logPassBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.praktikaDataSet10 = new Praktika.PraktikaDataSet10();
-            this.logPassTableAdapter = new Praktika.PraktikaDataSet10TableAdapters.LogPassTableAdapter();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -57,7 +55,7 @@ namespace Praktika
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet10)).BeginInit();
+
             this.SuspendLayout();
             // 
             // label1
@@ -204,16 +202,15 @@ namespace Praktika
             // logPassBindingSource
             // 
             this.logPassBindingSource.DataMember = "LogPass";
-            this.logPassBindingSource.DataSource = this.praktikaDataSet10;
+
             // 
             // praktikaDataSet10
             // 
-            this.praktikaDataSet10.DataSetName = "PraktikaDataSet10";
-            this.praktikaDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+
             // 
             // logPassTableAdapter
             // 
-            this.logPassTableAdapter.ClearBeforeFill = true;
+
             // 
             // textBox1
             // 
@@ -283,7 +280,6 @@ namespace Praktika
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logPassBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,9 +304,7 @@ namespace Praktika
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private PraktikaDataSet10 praktikaDataSet10;
         private System.Windows.Forms.BindingSource logPassBindingSource;
-        private PraktikaDataSet10TableAdapters.LogPassTableAdapter logPassTableAdapter;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;

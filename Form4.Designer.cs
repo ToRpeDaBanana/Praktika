@@ -33,13 +33,12 @@ namespace Praktika
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.mPBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.praktikaDataSet5 = new Praktika.PraktikaDataSet5();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.printButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.mPTableAdapter = new Praktika.PraktikaDataSet5TableAdapters.MPTableAdapter();
+
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,7 +47,6 @@ namespace Praktika
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mPBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,12 +69,11 @@ namespace Praktika
             // mPBindingSource
             // 
             this.mPBindingSource.DataMember = "MP";
-            this.mPBindingSource.DataSource = this.praktikaDataSet5;
+
             // 
             // praktikaDataSet5
             // 
-            this.praktikaDataSet5.DataSetName = "PraktikaDataSet5";
-            this.praktikaDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+
             // 
             // label2
             // 
@@ -129,7 +126,7 @@ namespace Praktika
             // 
             // mPTableAdapter
             // 
-            this.mPTableAdapter.ClearBeforeFill = true;
+
             // 
             // dataGridView1
             // 
@@ -206,7 +203,6 @@ namespace Praktika
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mPBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.praktikaDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -222,9 +218,9 @@ namespace Praktika
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button printButton;
         private System.Windows.Forms.Button button2;
-        private PraktikaDataSet5 praktikaDataSet5;
+
         private System.Windows.Forms.BindingSource mPBindingSource;
-        private PraktikaDataSet5TableAdapters.MPTableAdapter mPTableAdapter;
+
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

@@ -4,27 +4,40 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PraktikaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PraktikaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Praktika.Properties.Settings.GlobalReference.Default.PraktikaConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PraktikaConnectionStringGG" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PraktikaConnectionStringGG (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Praktika.Properties.Settings.GlobalReference.Default.PraktikaConnectionStringGG" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FromMPTableAdapter" GeneratorDataComponentClassName="FromMPTableAdapter" Name="FromMP" UserDataComponentName="FromMPTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MP3TableAdapter" GeneratorDataComponentClassName="MP3TableAdapter" Name="MP3" UserDataComponentName="MP3TableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="PraktikaConnectionString (Settings)" DbObjectName="Praktika.dbo.FromMP" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="PraktikaConnectionStringGG (Settings)" DbObjectName="Praktika.dbo.MP3" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT Наименование, Цена, На_Складе, Зарезервированно, [.], Количество FROM dbo.FromMP</CommandText>
+                    <CommandText>SELECT Категория FROM dbo.MP3</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="Наименование" DataSetColumn="Наименование" />
-              <Mapping SourceColumn="Цена" DataSetColumn="Цена" />
-              <Mapping SourceColumn="На_Складе" DataSetColumn="На_Складе" />
-              <Mapping SourceColumn="Зарезервированно" DataSetColumn="Зарезервированно" />
-              <Mapping SourceColumn="." DataSetColumn="_" />
-              <Mapping SourceColumn="Количество" DataSetColumn="Количество" />
+              <Mapping SourceColumn="Категория" DataSetColumn="Категория" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Add_ComboboxTableAdapter" GeneratorDataComponentClassName="Add_ComboboxTableAdapter" Name="Add_Combobox" UserDataComponentName="Add_ComboboxTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PraktikaConnectionStringGG (Settings)" DbObjectName="Praktika.dbo.Add_Combobox" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.Add_Combobox</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Категория" DataSetColumn="Категория" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -36,27 +49,29 @@
   <xs:element name="PraktikaDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PraktikaDataSet1" msprop:Generator_UserDSName="PraktikaDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FromMP" msprop:Generator_TableClassName="FromMPDataTable" msprop:Generator_TableVarName="tableFromMP" msprop:Generator_TablePropName="FromMP" msprop:Generator_RowDeletingName="FromMPRowDeleting" msprop:Generator_RowChangingName="FromMPRowChanging" msprop:Generator_RowEvHandlerName="FromMPRowChangeEventHandler" msprop:Generator_RowDeletedName="FromMPRowDeleted" msprop:Generator_UserTableName="FromMP" msprop:Generator_RowChangedName="FromMPRowChanged" msprop:Generator_RowEvArgName="FromMPRowChangeEvent" msprop:Generator_RowClassName="FromMPRow">
+        <xs:element name="MP3" msprop:Generator_TableClassName="MP3DataTable" msprop:Generator_TableVarName="tableMP3" msprop:Generator_TablePropName="MP3" msprop:Generator_RowDeletingName="MP3RowDeleting" msprop:Generator_RowChangingName="MP3RowChanging" msprop:Generator_RowEvHandlerName="MP3RowChangeEventHandler" msprop:Generator_RowDeletedName="MP3RowDeleted" msprop:Generator_UserTableName="MP3" msprop:Generator_RowChangedName="MP3RowChanged" msprop:Generator_RowEvArgName="MP3RowChangeEvent" msprop:Generator_RowClassName="MP3Row">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Наименование" msprop:Generator_ColumnVarNameInTable="columnНаименование" msprop:Generator_ColumnPropNameInRow="Наименование" msprop:Generator_ColumnPropNameInTable="НаименованиеColumn" msprop:Generator_UserColumnName="Наименование" minOccurs="0">
+              <xs:element name="Категория" msprop:Generator_ColumnVarNameInTable="columnКатегория" msprop:Generator_ColumnPropNameInRow="Категория" msprop:Generator_ColumnPropNameInTable="КатегорияColumn" msprop:Generator_UserColumnName="Категория" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Цена" msprop:Generator_ColumnVarNameInTable="columnЦена" msprop:Generator_ColumnPropNameInRow="Цена" msprop:Generator_ColumnPropNameInTable="ЦенаColumn" msprop:Generator_UserColumnName="Цена" type="xs:decimal" minOccurs="0" />
-              <xs:element name="На_Складе" msprop:Generator_ColumnVarNameInTable="columnНа_Складе" msprop:Generator_ColumnPropNameInRow="На_Складе" msprop:Generator_ColumnPropNameInTable="На_СкладеColumn" msprop:Generator_UserColumnName="На_Складе" type="xs:int" minOccurs="0" />
-              <xs:element name="Зарезервированно" msprop:Generator_ColumnVarNameInTable="columnЗарезервированно" msprop:Generator_ColumnPropNameInRow="Зарезервированно" msprop:Generator_ColumnPropNameInTable="ЗарезервированноColumn" msprop:Generator_UserColumnName="Зарезервированно" minOccurs="0">
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Add_Combobox" msprop:Generator_TableClassName="Add_ComboboxDataTable" msprop:Generator_TableVarName="tableAdd_Combobox" msprop:Generator_TablePropName="Add_Combobox" msprop:Generator_RowDeletingName="Add_ComboboxRowDeleting" msprop:Generator_RowChangingName="Add_ComboboxRowChanging" msprop:Generator_RowEvHandlerName="Add_ComboboxRowChangeEventHandler" msprop:Generator_RowDeletedName="Add_ComboboxRowDeleted" msprop:Generator_UserTableName="Add_Combobox" msprop:Generator_RowChangedName="Add_ComboboxRowChanged" msprop:Generator_RowEvArgName="Add_ComboboxRowChangeEvent" msprop:Generator_RowClassName="Add_ComboboxRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Категория" msprop:Generator_ColumnVarNameInTable="columnКатегория" msprop:Generator_ColumnPropNameInRow="Категория" msprop:Generator_ColumnPropNameInTable="КатегорияColumn" msprop:Generator_UserColumnName="Категория" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="_" msprop:Generator_ColumnVarNameInTable="column_" msprop:Generator_ColumnPropNameInRow="_" msprop:Generator_ColumnPropNameInTable="_Column" msprop:Generator_UserColumnName="_" type="xs:boolean" minOccurs="0" />
-              <xs:element name="Количество" msprop:Generator_ColumnVarNameInTable="columnКоличество" msprop:Generator_ColumnPropNameInRow="Количество" msprop:Generator_ColumnPropNameInTable="КоличествоColumn" msprop:Generator_UserColumnName="Количество" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

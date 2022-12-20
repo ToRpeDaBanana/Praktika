@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="PraktikaDataSet2" targetNamespace="http://tempuri.org/PraktikaDataSet2.xsd" xmlns:mstns="http://tempuri.org/PraktikaDataSet2.xsd" xmlns="http://tempuri.org/PraktikaDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="addcombobox" targetNamespace="http://tempuri.org/addcombobox.xsd" xmlns:mstns="http://tempuri.org/addcombobox.xsd" xmlns="http://tempuri.org/addcombobox.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -46,7 +46,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="PraktikaDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PraktikaDataSet2" msprop:Generator_UserDSName="PraktikaDataSet2">
+  <xs:element name="addcombobox" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="addcombobox" msprop:Generator_UserDSName="addcombobox">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="MP3" msprop:Generator_TableClassName="MP3DataTable" msprop:Generator_TableVarName="tableMP3" msprop:Generator_TablePropName="MP3" msprop:Generator_RowDeletingName="MP3RowDeleting" msprop:Generator_RowChangingName="MP3RowChanging" msprop:Generator_RowEvHandlerName="MP3RowChangeEventHandler" msprop:Generator_RowDeletedName="MP3RowDeleted" msprop:Generator_UserTableName="MP3" msprop:Generator_RowChangedName="MP3RowChanged" msprop:Generator_RowEvArgName="MP3RowChangeEvent" msprop:Generator_RowClassName="MP3Row">

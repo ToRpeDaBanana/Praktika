@@ -37,8 +37,6 @@ namespace Praktika
         public Form3 Form3 { get; }
         private void Form4_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet5.MP". При необходимости она может быть перемещена или удалена.
-            this.mPTableAdapter.Fill(this.praktikaDataSet5.MP);
             base.Text = "Форма заказа для МП";
             label1.Text = "Заказчик";
             label2.Text = "Общая сумма";
