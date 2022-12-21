@@ -311,5 +311,11 @@
   <ItemGroup>
     <Analyzer Include="packages\AWSSDK.DynamoDBv2.3.7.3.50\analyzers\dotnet\cs\AWSSDK.DynamoDBv2.CodeAnalysis.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\К.А\Windows Forms\UDP Chat\UDP Chat.csproj">
+      <Project>{31be53bb-494c-4dab-bd6f-dbcf57b472e5}</Project>
+      <Name>UDP Chat</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
