@@ -42,24 +42,26 @@ namespace UDP_Chat
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 33);
+            this.label1.Location = new System.Drawing.Point(43, 158);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Введите имя: ";
+            this.label1.Visible = false;
             // 
             // userNameTextBox
             // 
-            this.userNameTextBox.Location = new System.Drawing.Point(117, 30);
+            this.userNameTextBox.Location = new System.Drawing.Point(130, 155);
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(278, 20);
             this.userNameTextBox.TabIndex = 1;
+            this.userNameTextBox.Visible = false;
             this.userNameTextBox.TextChanged += new System.EventHandler(this.userNameTextBox_TextChanged);
             this.userNameTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userNameTextBox_KeyDown);
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(435, 28);
+            this.loginButton.Location = new System.Drawing.Point(368, 12);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 23);
             this.loginButton.TabIndex = 2;
@@ -69,7 +71,7 @@ namespace UDP_Chat
             // 
             // logoutButton
             // 
-            this.logoutButton.Location = new System.Drawing.Point(435, 66);
+            this.logoutButton.Location = new System.Drawing.Point(449, 12);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(75, 23);
             this.logoutButton.TabIndex = 3;
@@ -98,10 +100,10 @@ namespace UDP_Chat
             // 
             // chatTextBox
             // 
-            this.chatTextBox.Location = new System.Drawing.Point(12, 116);
+            this.chatTextBox.Location = new System.Drawing.Point(12, 49);
             this.chatTextBox.Multiline = true;
             this.chatTextBox.Name = "chatTextBox";
-            this.chatTextBox.Size = new System.Drawing.Size(512, 230);
+            this.chatTextBox.Size = new System.Drawing.Size(512, 305);
             this.chatTextBox.TabIndex = 6;
             // 
             // label2

@@ -102,6 +102,8 @@ namespace Praktika
                 connection.Close();
             }
 
+            var form7 = new UDP_Chat.Form7();
+            form7.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

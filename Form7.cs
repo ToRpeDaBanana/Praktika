@@ -45,7 +45,7 @@ namespace UDP_Chat
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            userName = userNameTextBox.Text;
+            userName = Praktika.StaticData.Login;
             userNameTextBox.ReadOnly = true;
 
             try

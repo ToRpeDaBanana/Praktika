@@ -110,12 +110,10 @@ namespace Praktika
 
 
                 }
+                StaticData.Login = comboBox1.Text;
                 reader.Close();
                 connection.Close();
-
-            var form7 = new UDP_Chat.Form7();
-            form7.Show();
-        }
+            }
         void frm2_FormClosed(object sender, FormClosedEventArgs e)
         {
             frm2 = null;
