@@ -19,7 +19,7 @@ namespace UDP_Chat
         const int LOCALPORT = 8001;
         const int REMOTEPORT = 8001;
         const int TTL = 20;
-        const string HOST = "26.116.96.59";
+        const string HOST = "235.5.5.1";
         IPAddress groupAddress;
 
         string userName;
