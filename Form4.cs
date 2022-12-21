@@ -50,14 +50,21 @@ namespace Praktika
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            try
+            {
+                if (string.IsNullOrWhiteSpace(textBox1.Text))
+                {
+                    throw new Exception();
+                }
+                else
+                {
+                    CaptureScreen();
+                    printDocument1.Print();
+                }
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Не указано имя заказчика", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            }
-            else
-            {
-                CaptureScreen();
-                printDocument1.Print();
             }
         }
 
