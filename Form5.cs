@@ -39,7 +39,7 @@ namespace Praktika
                 SqlCommand command = connection.CreateCommand();
                 command.Connection = connection;
                 connection.Open();
-                command.CommandText = "select * from Staff;";
+                command.CommandText = "SELECT * FROM Staff;";
                 command.ExecuteNonQuery();
                 bd.Clear();
                 adapter = new SqlDataAdapter(command);
@@ -51,14 +51,14 @@ namespace Praktika
                 // connection.Close();
             }
         }
-        private SqlConnection cn = new SqlConnection(Properties.Settings.Default.PraktikaConnectionString);
+        private SqlConnection cn = new SqlConnection(Properties.Settings.Default.PraktikaConnectionStringGG);
         private DataSet myDS = new DataSet();
 
         
     public Form3 Form3 { get; }
         private void Form5_Load(object sender, EventArgs e)
         {
-            SqlDataAdapter dAdapt = new SqlDataAdapter("select * from Staff", cn);
+            SqlDataAdapter dAdapt = new SqlDataAdapter("SELECT * FROM Staff", cn);
             dAdapt.Fill(myDS, "Staff");
             comboBox1.Items.Clear();
             int i = 0;
