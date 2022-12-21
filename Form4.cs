@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Drawing.Printing;
-using Amazon.DynamoDBv2;
 using System.Activities.Expressions;
 
 namespace Praktika
@@ -51,8 +50,15 @@ namespace Praktika
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CaptureScreen();
-            printDocument1.Print();
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                MessageBox.Show("Не указано имя заказчика", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                CaptureScreen();
+                printDocument1.Print();
+            }
         }
 
         Bitmap memoryImage;
