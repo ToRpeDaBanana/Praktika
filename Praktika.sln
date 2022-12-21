@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Praktika", "Praktika.csproj", "{77BF50B4-E1D3-484F-B353-8FF157B56CEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDP Chat", "..\К.А\Windows Forms\UDP Chat\UDP Chat.csproj", "{31BE53BB-494C-4DAB-BD6F-DBCF57B472E5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{77BF50B4-E1D3-484F-B353-8FF157B56CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77BF50B4-E1D3-484F-B353-8FF157B56CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77BF50B4-E1D3-484F-B353-8FF157B56CEC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31BE53BB-494C-4DAB-BD6F-DBCF57B472E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31BE53BB-494C-4DAB-BD6F-DBCF57B472E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31BE53BB-494C-4DAB-BD6F-DBCF57B472E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31BE53BB-494C-4DAB-BD6F-DBCF57B472E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
