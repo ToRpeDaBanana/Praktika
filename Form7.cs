@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,8 +15,8 @@ namespace UDP_Chat
 {
     public partial class Form7 : Form
     {
+        Thread thread = Thread.CurrentThread;
         //объявление переменных для подключения по сети
-        bool alive = false;
         UdpClient client;
         const int LOCALPORT = 8001;
         const int REMOTEPORT = 8001;
@@ -80,11 +81,10 @@ namespace UDP_Chat
 
         private void ReceiveMessages()
         {
-            alive = true;
             try
             {
                 //настройка получения сообщений от других участников чата
-                while (alive)
+                while (thread.IsAlive)
                 {
                     IPEndPoint remoteIp = null;
                     byte[] data = client.Receive(ref remoteIp);
@@ -99,9 +99,8 @@ namespace UDP_Chat
             }
             catch (ObjectDisposedException)
             {
-                if (!alive)
+                if (!thread.IsAlive)
                     return;
-                throw;
             }
             catch(Exception ex)
             {
@@ -139,7 +138,6 @@ namespace UDP_Chat
             client.Send(data, data.Length, HOST, REMOTEPORT);
             client.DropMulticastGroup(groupAddress);
 
-            alive = false;
             client.Close();
 
             //определяем активные && неактивные элементы после выхода из чата
@@ -151,7 +149,7 @@ namespace UDP_Chat
 
         private void Form1_FormClosing(object sender, FormClosedEventArgs e)
         {
-            if (alive)
+            if (thread.IsAlive)
                 ExitChat();
         }
 
