@@ -52,7 +52,7 @@ namespace Praktika
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(textBox1.Text))
+                if (string.IsNullOrWhiteSpace(textBox1.Text)) //если не указано имя заказчика - переходим в блок catch, иначе - else
                 {
                     throw new Exception();
                 }
@@ -62,7 +62,7 @@ namespace Praktika
                     printDocument1.Print();
                 }
             }
-            catch (Exception ex)
+            catch (Exception ex) //обработка исключения
             {
                 MessageBox.Show("Не указано имя заказчика", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
