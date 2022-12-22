@@ -14,6 +14,7 @@ namespace UDP_Chat
 {
     public partial class Form7 : Form
     {
+        //объявление переменных для подключения по сети
         bool alive = false;
         UdpClient client;
         const int LOCALPORT = 8001;
@@ -28,6 +29,7 @@ namespace UDP_Chat
         {
             InitializeComponent();
 
+            //определяем активные && неактивные элементы до входа в чат
             loginButton.Enabled = true;
             logoutButton.Enabled = false;
             sendButton.Enabled = false;
@@ -38,6 +40,7 @@ namespace UDP_Chat
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            //настройка работы диалогового окна
             chatTextBox.ScrollBars = ScrollBars.Vertical;
             chatTextBox.AcceptsReturn = true;
             chatTextBox.WordWrap = true;
@@ -45,21 +48,25 @@ namespace UDP_Chat
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+            //автоматический перенос данных из логина для входа в аккаунт в имя участника чата
             userName = Praktika.StaticData.Login;
             userNameTextBox.ReadOnly = true;
 
             try
             {
+                //запуск чата
                 client = new UdpClient(LOCALPORT);
                 client.JoinMulticastGroup(groupAddress, TTL);
 
                 Task receiveTask = new Task(ReceiveMessages);
                 receiveTask.Start();
 
+                //автоматическая отправка сообщения о подключении нового участника
                 string message = userName + " присоединяется к нам!";
                 byte[] data = Encoding.Unicode.GetBytes(message);
                 client.Send(data, data.Length, HOST, REMOTEPORT);
 
+                //определяем активные && неактивные элементы после входа в чат
                 loginButton.Enabled = false;
                 logoutButton.Enabled = true;
                 sendButton.Enabled = true;
@@ -76,6 +83,7 @@ namespace UDP_Chat
             alive = true;
             try
             {
+                //настройка получения сообщений от других участников чата
                 while (alive)
                 {
                     IPEndPoint remoteIp = null;
@@ -105,6 +113,7 @@ namespace UDP_Chat
         {
             try
             {
+                //настройка отправки сообщений другим участникам чата
                 string message = String.Format("{0}: {1}", userName, messageTextBox.Text);
                 byte[] data = Encoding.Unicode.GetBytes(message);
                 client.Send(data, data.Length, HOST, REMOTEPORT);
@@ -117,13 +126,14 @@ namespace UDP_Chat
             }
         }
 
-        private void logoutButton_Click(object sender, EventArgs e)
+        private void logoutButton_Click(object sender, EventArgs e) //выход из чата
         {
             ExitChat();
         }
 
         private void ExitChat()
         {
+            //настройка выхода участника из чата
             string message = userName + " покидает нас!";
             byte[] data = Encoding.Unicode.GetBytes(message);
             client.Send(data, data.Length, HOST, REMOTEPORT);
@@ -132,6 +142,7 @@ namespace UDP_Chat
             alive = false;
             client.Close();
 
+            //определяем активные && неактивные элементы после выхода из чата
             loginButton.Enabled = true;
             logoutButton.Enabled = false;
             sendButton.Enabled = false;
@@ -144,12 +155,12 @@ namespace UDP_Chat
                 ExitChat();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e) //указываем название формы чата
         {
             this.Text = "Внутренний чат";
         }
 
-        private void userNameTextBox_KeyDown(object sender, KeyEventArgs e)
+        private void userNameTextBox_KeyDown(object sender, KeyEventArgs e) //неиспользуемый вход в чат по нажатию клавиши "Enter"
         {
             if (e.KeyValue == (char)Keys.Enter)
             {
@@ -158,7 +169,7 @@ namespace UDP_Chat
             }
         }
 
-        private void messageTextBox_KeyDown(object sender, KeyEventArgs e)
+        private void messageTextBox_KeyDown(object sender, KeyEventArgs e) //отправка сообщения по нажатию клавиши "Enter"
         {
             if (e.KeyValue == (char)Keys.Enter)
             {
