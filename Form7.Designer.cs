@@ -1,17 +1,17 @@
 ﻿
-namespace UDP_Chat
+namespace Praktika
 {
     partial class Form7
     {
         /// <summary>
-        /// Обязательная переменная конструктора.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,11 +21,11 @@ namespace UDP_Chat
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -33,35 +33,32 @@ namespace UDP_Chat
             this.userNameTextBox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
-            this.sendButton = new System.Windows.Forms.Button();
-            this.messageTextBox = new System.Windows.Forms.TextBox();
             this.chatTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.messageTextBox = new System.Windows.Forms.TextBox();
+            this.sendButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 158);
+            this.label1.Location = new System.Drawing.Point(58, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Введите имя: ";
-            this.label1.Visible = false;
+            this.label1.Text = "Введите имя:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // userNameTextBox
             // 
-            this.userNameTextBox.Location = new System.Drawing.Point(130, 155);
+            this.userNameTextBox.Location = new System.Drawing.Point(139, 124);
             this.userNameTextBox.Name = "userNameTextBox";
-            this.userNameTextBox.Size = new System.Drawing.Size(278, 20);
+            this.userNameTextBox.Size = new System.Drawing.Size(299, 20);
             this.userNameTextBox.TabIndex = 1;
-            this.userNameTextBox.Visible = false;
-            this.userNameTextBox.TextChanged += new System.EventHandler(this.userNameTextBox_TextChanged);
-            this.userNameTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userNameTextBox_KeyDown);
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(368, 12);
+            this.loginButton.Location = new System.Drawing.Point(369, 12);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 23);
             this.loginButton.TabIndex = 2;
@@ -71,7 +68,7 @@ namespace UDP_Chat
             // 
             // logoutButton
             // 
-            this.logoutButton.Location = new System.Drawing.Point(449, 12);
+            this.logoutButton.Location = new System.Drawing.Point(450, 12);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(75, 23);
             this.logoutButton.TabIndex = 3;
@@ -79,59 +76,58 @@ namespace UDP_Chat
             this.logoutButton.UseVisualStyleBackColor = true;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
-            // sendButton
-            // 
-            this.sendButton.Location = new System.Drawing.Point(414, 371);
-            this.sendButton.Name = "sendButton";
-            this.sendButton.Size = new System.Drawing.Size(110, 39);
-            this.sendButton.TabIndex = 4;
-            this.sendButton.Text = "Отправить";
-            this.sendButton.UseVisualStyleBackColor = true;
-            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
-            // 
-            // messageTextBox
-            // 
-            this.messageTextBox.Location = new System.Drawing.Point(12, 381);
-            this.messageTextBox.Name = "messageTextBox";
-            this.messageTextBox.Size = new System.Drawing.Size(396, 20);
-            this.messageTextBox.TabIndex = 5;
-            this.messageTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.messageTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.messageTextBox_KeyDown);
-            // 
             // chatTextBox
             // 
-            this.chatTextBox.Location = new System.Drawing.Point(12, 49);
+            this.chatTextBox.Location = new System.Drawing.Point(12, 41);
             this.chatTextBox.Multiline = true;
             this.chatTextBox.Name = "chatTextBox";
-            this.chatTextBox.Size = new System.Drawing.Size(512, 305);
-            this.chatTextBox.TabIndex = 6;
+            this.chatTextBox.Size = new System.Drawing.Size(513, 319);
+            this.chatTextBox.TabIndex = 4;
+            this.chatTextBox.TextChanged += new System.EventHandler(this.chatTextBox_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 365);
+            this.label2.Location = new System.Drawing.Point(12, 363);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 13);
-            this.label2.TabIndex = 7;
+            this.label2.TabIndex = 5;
             this.label2.Text = "Введите сообщение";
+            // 
+            // messageTextBox
+            // 
+            this.messageTextBox.Location = new System.Drawing.Point(12, 379);
+            this.messageTextBox.Name = "messageTextBox";
+            this.messageTextBox.Size = new System.Drawing.Size(400, 20);
+            this.messageTextBox.TabIndex = 6;
+            this.messageTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.messageTextBox_KeyDown);
+            // 
+            // sendButton
+            // 
+            this.sendButton.Location = new System.Drawing.Point(418, 369);
+            this.sendButton.Name = "sendButton";
+            this.sendButton.Size = new System.Drawing.Size(107, 38);
+            this.sendButton.TabIndex = 7;
+            this.sendButton.Text = "Отправить";
+            this.sendButton.UseVisualStyleBackColor = true;
+            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
             // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 420);
+            this.ClientSize = new System.Drawing.Size(537, 419);
+            this.Controls.Add(this.sendButton);
+            this.Controls.Add(this.messageTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.chatTextBox);
-            this.Controls.Add(this.messageTextBox);
-            this.Controls.Add(this.sendButton);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.userNameTextBox);
             this.Controls.Add(this.label1);
-            this.KeyPreview = true;
             this.Name = "Form7";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Form7";
+            this.Load += new System.EventHandler(this.Form7_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,10 +139,9 @@ namespace UDP_Chat
         private System.Windows.Forms.TextBox userNameTextBox;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Button logoutButton;
-        private System.Windows.Forms.Button sendButton;
-        private System.Windows.Forms.TextBox messageTextBox;
         private System.Windows.Forms.TextBox chatTextBox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox messageTextBox;
+        private System.Windows.Forms.Button sendButton;
     }
 }
-

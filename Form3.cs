@@ -102,8 +102,7 @@ namespace Praktika
                 connection.Close();
             }
 
-            var form7 = new UDP_Chat.Form7();
-            form7.Show();
+            StaticData.frm7Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -193,9 +192,12 @@ namespace Praktika
 
         private void button5_Click_1(object sender, EventArgs e)
         {
+            StaticData.frm7Hide();
+
             Owner.Show();
             Hide();
         }
+
 
         private void button6_Click(object sender, EventArgs e)
         {

@@ -11,10 +11,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UDP_Chat
+namespace Praktika
 {
     public partial class Form7 : Form
     {
+
         Thread thread = Thread.CurrentThread;
         //объявление переменных для подключения по сети
         UdpClient client;
@@ -25,7 +26,6 @@ namespace UDP_Chat
         IPAddress groupAddress;
 
         string userName;
-
         public Form7()
         {
             InitializeComponent();
@@ -39,7 +39,19 @@ namespace UDP_Chat
             groupAddress = IPAddress.Parse(HOST);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Form7_Load(object sender, EventArgs e) //указываем настройки формы чата
+        {
+            this.Text = "Внутренний чат";
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.ControlBox = false;
+        }
+
+        private void label1_Click(object sender, EventArgs e) //мусор
+        {
+
+        }
+
+        private void chatTextBox_TextChanged(object sender, EventArgs e)
         {
             //настройка работы диалогового окна
             chatTextBox.ScrollBars = ScrollBars.Vertical;
@@ -90,11 +102,11 @@ namespace UDP_Chat
                     byte[] data = client.Receive(ref remoteIp);
                     string message = Encoding.Unicode.GetString(data);
 
-                    this.Invoke((MethodInvoker) delegate
-                        {
+                    this.Invoke((MethodInvoker)delegate
+                    {
                         string time = DateTime.Now.ToShortTimeString();
                         chatTextBox.Text = time + " " + message + "\r\n" + chatTextBox.Text;
-                        });
+                    });
                 }
             }
             catch (ObjectDisposedException)
@@ -102,7 +114,7 @@ namespace UDP_Chat
                 if (!thread.IsAlive)
                     return;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -147,37 +159,18 @@ namespace UDP_Chat
             userNameTextBox.ReadOnly = false;
         }
 
-        private void Form1_FormClosing(object sender, FormClosedEventArgs e)
+        private void Form7_FormClosing(object sender, FormClosedEventArgs e)
         {
             if (thread.IsAlive)
                 ExitChat();
         }
 
-        private void Form1_Load(object sender, EventArgs e) //указываем название формы чата
-        {
-            this.Text = "Внутренний чат";
-        }
-
-        private void userNameTextBox_KeyDown(object sender, KeyEventArgs e) //неиспользуемый вход в чат по нажатию клавиши "Enter"
-        {
-            if (e.KeyValue == (char)Keys.Enter)
-            {
-                loginButton_Click(loginButton, null);
-                messageTextBox.Focus();
-            }
-        }
-
-        private void messageTextBox_KeyDown(object sender, KeyEventArgs e) //отправка сообщения по нажатию клавиши "Enter"
+        private void messageTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyValue == (char)Keys.Enter)
             {
                 sendButton_Click(sendButton, null);
             }
-        }
-
-        private void userNameTextBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

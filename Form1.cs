@@ -18,6 +18,7 @@ namespace Praktika
         Form2 frm2;
         Form3 frm3;
         Form4 frm4;
+        Form7 frm7;
         public Form1()
         {
             InitializeComponent();
