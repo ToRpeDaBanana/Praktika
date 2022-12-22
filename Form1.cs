@@ -14,23 +14,25 @@ namespace Praktika
 {
     public partial class Form1 : Form
     {
-        string conStr = @"Data Source=26.116.96.59;Initial Catalog=Praktika;User ID = sa; Password = sa";
+        string conStr = @"Data Source=26.116.96.59;Initial Catalog=Praktika;User ID = sa; Password = sa"; //Строка подключения к базе данных.
+        //Задача переменных для открытия форм.
         Form2 frm2;
         Form3 frm3;
         Form4 frm4;
-        Form7 frm7;
+        //
         public Form1()
         {
             InitializeComponent();
-            textBox1.PasswordChar = Convert.ToChar("*");
+            textBox1.PasswordChar = Convert.ToChar("*");//Скрытия пароля при вводе.
             textBox1.MaxLength = 50;
         }
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet26.LogPass". При необходимости она может быть перемещена или удалена.
-            this.logPassTableAdapter3.Fill(this.praktikaDataSet26.LogPass);
+            
+            this.logPassTableAdapter3.Fill(this.praktikaDataSet26.LogPass);//Данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet26.LogPass".
+
             this.button1.Text = "Вход";
             this.button2.Text = "Выход";
             base.Text = "Авторизация";
@@ -40,28 +42,31 @@ namespace Praktika
             label2.Font = new Font("Arial", 8, FontStyle.Regular);
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.ControlBox = false;
-            comboBox1.Text = string.Empty;
+            comboBox1.Text = string.Empty;//пустой combobox.
         }
 
         
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            Close();//Закрытие программы.
         }
 
        
             private void button1_Click(object sender, EventArgs e)
             {
+                //Создание и открытие подключения к базе данных.
                 SqlConnection connection = new SqlConnection(conStr);
                 connection.Open();
+                //
 
+                //Создание SQL команды на запрос чтения из базы данных.
                 SqlCommand command3 = new SqlCommand("SELECT Login, Password, Role FROM LogPass", connection);
                 SqlDataReader reader = command3.ExecuteReader();
+                //
 
 
-
-                while (reader.Read())
+                while (reader.Read())//Проверка логина, роли и пароля пользователя.
                 {
 
 
@@ -115,6 +120,7 @@ namespace Praktika
                 reader.Close();
                 connection.Close();
             }
+        //Методы закрытия форм.
         void frm2_FormClosed(object sender, FormClosedEventArgs e)
         {
             frm2 = null;
@@ -125,5 +131,6 @@ namespace Praktika
             frm3 = null;
             Show();
         }
+        //
     }
 }

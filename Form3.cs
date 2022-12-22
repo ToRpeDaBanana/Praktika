@@ -14,25 +14,28 @@ namespace Praktika
 {
     public partial class Form3 : Form
     {
-        Form3 frm3;
+        //Задача переменных для открытия форм.
         Form6 frm6;
         Form4 frm4;
         Form5 frm5;
+        //
+
+        //Переменные для создания таблицы, SQL команд и вывода данных в dataGridView1. 
         SqlDataAdapter adapter = null;
         DataTable bd = new DataTable();
         BindingSource bds;
-        Form1 parent;
-        string conStr = @"Data Source=26.116.96.59;Initial Catalog=Praktika;User ID = sa; Password = sa";
-        public void selectКлиент()
+        //
+        string conStr = @"Data Source=26.116.96.59;Initial Catalog=Praktika;User ID = sa; Password = sa";//Строка подключения к базе данных.
+        public void selectКлиент()//Метод для подключения, запросов и заполнения dataGridView1.
         {
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
-                dataGridView1.Rows.Remove(dataGridView1.Rows[i]);
+                dataGridView1.Rows.Remove(dataGridView1.Rows[i]);//Удаление пустых строк.
             using (SqlConnection connection = new SqlConnection(conStr))
             {
                 
                 SqlCommand command = connection.CreateCommand();
                 command.Connection = connection;
-                connection.Open();
+                connection.Open();//Открытие подключения.
                 command.CommandText = "select * from MP3;";
                 command.ExecuteNonQuery();
                 bd.Clear();
@@ -42,7 +45,7 @@ namespace Praktika
                 adapter.UpdateCommand = bulder.GetUpdateCommand();
                 bds = new BindingSource();
                 bds.DataSource = bd;
-                dataGridView1.DataSource = bds;
+                dataGridView1.DataSource = bds;//Передача данных в dataGridView1.
                 // connection.Close();
             }
 
@@ -61,11 +64,11 @@ namespace Praktika
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "addcombobox.Add_Combobox". При необходимости она может быть перемещена или удалена.
+            //Данная строка кода позволяет загрузить SQL запрос "addcombobox.Add_Combobox".
             this.add_ComboboxTableAdapter1.Fill(this.addcombobox.Add_Combobox);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet25.MP3". При необходимости она может быть перемещена или удалена.
+            //Данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet25.MP3".
             this.mP3TableAdapter5.Fill(this.praktikaDataSet25.MP3);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet24.MP3". При необходимости она может быть перемещена или удалена.
+            //Данная строка кода позволяет загрузить данные в таблицу "praktikaDataSet24.MP3".
             this.mP3TableAdapter4.Fill(this.praktikaDataSet24.MP3);
 
 
@@ -102,28 +105,30 @@ namespace Praktika
                 connection.Close();
             }
 
-            StaticData.frm7Show();
+            StaticData.frm7Show();//Открытие внутреннего чата.
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Сортировка данных при помощи BindingSource.
             if (comboBox1.Items != null)
             {
-                bds.Filter = "[Категория] LIKE '%" + comboBox1.Text + "%'" + " AND [Цена] >= " + textBox2.Text + " AND [Цена] <= " + textBox1.Text;
+                bds.Filter = "[Категория] LIKE '%" + comboBox1.Text + "%'" + " AND [Цена] >= " + textBox2.Text + " AND [Цена] <= " + textBox1.Text;//Сортировка по категории и цене.
             }
             else if (comboBox1.Items ==null)
             {
-                bds.Filter = "[Цена] >= " + textBox2.Text + " AND [Цена] <= " + textBox1.Text;
+                bds.Filter = "[Цена] >= " + textBox2.Text + " AND [Цена] <= " + textBox1.Text;//Сортировка по цене.
             }
+            //
         }
 
 
-        void frm3_FormClosed(object sender, FormClosedEventArgs e)
+        void frm3_FormClosed(object sender, FormClosedEventArgs e)//Метод открытия формы 4.
         {
             frm4 = null;
             Show();
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//Открытие формы 4 и закрытие формы 3.
         {
             if (frm4 == null)
             {
@@ -135,7 +140,7 @@ namespace Praktika
             Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)//Открытие формы 6 и закрытие формы 3.
         {
             
             if (frm6 == null)
@@ -147,7 +152,7 @@ namespace Praktika
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)//Открытие формы 5.
         {
                 frm5 = new Form5();
 
@@ -157,12 +162,13 @@ namespace Praktika
 
     private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            
+            //Резервирование товара при нажатии на CheckBox.
                     if (dataGridView1.Columns[e.ColumnIndex].Name == "даНетDataGridViewCheckBoxColumn")
                     {
                         DataGridViewCheckBoxCell checkCell =
                             (DataGridViewCheckBoxCell)dataGridView1.
                             Rows[e.RowIndex].Cells["даНетDataGridViewCheckBoxColumn"];
+                        //Проверка булевого значения
                         if ((bool)dataGridView1.Rows[e.RowIndex].Cells[4].Value == true)
                         {
                             dataGridView1.Rows[e.RowIndex].Cells[3].Value = "Да";
@@ -171,10 +177,10 @@ namespace Praktika
                         {
                             dataGridView1.Rows[e.RowIndex].Cells[3].Value = "Нет";
                         }
-
+                        //
                         dataGridView1.Invalidate();
                     }
-
+            //
         }
 
         private void dataGridView1_CurrentCellDirtyStateChanged(object sender, EventArgs e)
@@ -190,7 +196,7 @@ namespace Praktika
             dataGridView1.CommitEdit(DataGridViewDataErrorContexts.Commit);
         }
 
-        private void button5_Click_1(object sender, EventArgs e)
+        private void button5_Click_1(object sender, EventArgs e)//Закрытие формы 3 и внутреннего чата.
         {
             StaticData.frm7Hide();
 
@@ -199,7 +205,7 @@ namespace Praktika
         }
 
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)//Очистка сортировки.
         {
             bds.Filter = string.Empty;
         }

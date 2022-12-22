@@ -17,10 +17,8 @@ namespace Praktika
     {
 
 
-        private PrintDocument printDocument1 = new PrintDocument();
-        Form3 parent;
-        Form5 frm5;
-        string conStr = @"Data Source=26.116.96.59;Initial Catalog=Praktika;User ID = sa; Password = sa";
+        private PrintDocument printDocument1 = new PrintDocument();//Задача переменной для метода печати.
+        string conStr = @"Data Source=26.116.96.59;Initial Catalog=Praktika;User ID = sa; Password = sa";//Строка подключения к базе данных.
         public Form4()
         {
             InitializeComponent();
@@ -28,9 +26,11 @@ namespace Praktika
         public Form4(Form3 form3)
         {
             Form3 = form3;
+            //Событие печати на кнопку.
             printButton.Click += new EventHandler(button1_Click);
             printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
             this.Controls.Add(printButton);
+            //
         }
 
         public Form3 Form3 { get; }
@@ -52,17 +52,17 @@ namespace Praktika
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(textBox1.Text)) //если не указано имя заказчика - переходим в блок catch, иначе - else
+                if (string.IsNullOrWhiteSpace(textBox1.Text)) //если не указано имя заказчика - переходим в блок catch, иначе - else.
                 {
                     throw new Exception();
                 }
                 else
                 {
-                    CaptureScreen();
-                    printDocument1.Print();
+                    CaptureScreen();//Захват окна.
+                    printDocument1.Print();//Печать документа.
                 }
             }
-            catch (Exception ex) //обработка исключения
+            catch (Exception ex) //обработка исключения.
             {
                 MessageBox.Show("Не указано имя заказчика", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
@@ -70,29 +70,29 @@ namespace Praktika
 
         Bitmap memoryImage;
 
-        private void CaptureScreen()
+        private void CaptureScreen()//Метод захвата окна для печати.
         {
             Graphics myGraphics = this.CreateGraphics();
-            Size s = this.Size;
+            Size s = this.Size;//Текущий размер окна.
             memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
             Graphics memoryGraphics = Graphics.FromImage(memoryImage);
             memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
         }
 
         private void printDocument1_PrintPage(System.Object sender,
-               System.Drawing.Printing.PrintPageEventArgs e)
+               System.Drawing.Printing.PrintPageEventArgs e)//Метод печати.
         {
             e.Graphics.DrawImage(memoryImage, 0, 0);
         }
 
         
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//Закрытие формы.
         {
             Owner.Show();
             Hide();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)//Запись и обновление данных в таблице dataGridView1.
         {
             Validate();
             dataGridView1.Update();
@@ -101,12 +101,12 @@ namespace Praktika
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)//Мусор.
         {
 
         }
 
-        private void Enter(object sender, KeyPressEventArgs e)
+        private void Enter(object sender, KeyPressEventArgs e)//Подсчёт общей суммы заказа.
         {
             int sum = 0;
             for (int i = 0; i < dataGridView1.Rows.Count; ++i)
